@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         btnLeggi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String ricevuta= g.Leggi("scri.txt", getApplicationContext());
+                lblContenuto.setText(ricevuta);
             }
         });
         btnInserisci.setOnClickListener(new View.OnClickListener() {
